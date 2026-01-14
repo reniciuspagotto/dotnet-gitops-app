@@ -2,7 +2,7 @@ replicaCount: 2
 
 image:
   repository: mycontainergitops.azurecr.io/dotnet-gitops-app
-  tag: latest
+  tag: 20260114004934-daba02d
   pullPolicy: Always
 
 service:

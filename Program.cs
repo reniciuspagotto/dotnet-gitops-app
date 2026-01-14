@@ -8,7 +8,7 @@ app.MapGet("/api/info", () => new
 {
     Name = "GitOps Demo App",
     Email = "demo@gitops.io",
-    Version = "2.0.0",
+    Version = "3.0.0",
     Timestamp = DateTime.UtcNow
 });
 

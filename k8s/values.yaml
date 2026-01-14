@@ -1,7 +1,7 @@
 replicaCount: 2
 
 image:
-  repository: <your-acr-name>.azurecr.io/dotnet-gitops-app
+  repository: mycontainergitops.azurecr.io/dotnet-gitops-app
   tag: latest
   pullPolicy: Always
 

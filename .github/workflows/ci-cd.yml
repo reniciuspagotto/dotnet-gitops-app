@@ -1,10 +1,13 @@
 name: CI/CD Pipeline
 
 on:
+  push:
+    branches:
+      - main
   workflow_dispatch:
 
 env:
-  REGISTRY: <your-acr-name>.azurecr.io
+  REGISTRY: mycontainergitops.azurecr.io
   IMAGE_NAME: dotnet-gitops-app
 
 jobs:

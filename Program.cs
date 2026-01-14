@@ -2,11 +2,14 @@ var builder = WebApplication.CreateBuilder(args);
 
 var app = builder.Build();
 
+app.Urls.Add("http://0.0.0.0:8080");
+
 app.MapGet("/api/info", () => new
 {
-    Name = "Your Name",
-    Email = "your.email@example.com",
-    Version = "1.0.0"
+    Name = "GitOps Demo App",
+    Email = "demo@gitops.io",
+    Version = "1.0.0",
+    Timestamp = DateTime.UtcNow
 });
 
 app.MapGet("/health", () => new { Status = "Healthy" });
